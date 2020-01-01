@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Gelasio', serif;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    /* 
+    Shadow
+    outline-width: 2px;
+    outline-color: #FFF;
+    text-shadow: rgb(162, 161, 161) 2px 2px 0; */
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+ 
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.765;
+}
+
+.biography {
+    padding-left: 10%;   
+    padding-right: 10%;
+}
+
+.title {
+    padding: 4% 0;
+}
+
+.content {
+    padding: 15px;
+    color: rgb(113, 113, 113)
+}
+
+/* .btn-container {
+    width: 150px;
+} */
+
+.img-ben {
+    /* border-radius: 50%; */
+}
+
+.bj-btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bj-btn:hover {
+    background-color: #9F5F9F;
+    border-color: #9F5F9F;
+}
+
+.header-img {
+    padding: 0;
+}
+
+hr {
+    width: 80%;
+}
+
+/*
+    all caps w/ tracking
+    gray with black hover
+*/
+
+.footer {
+    font-size: 12px;
+    color: rgb(113, 113, 113);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.social a {
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+    padding-left: 3px;
+}
+
+.social a:hover {
+    color: black
+}
