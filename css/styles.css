@@ -1,3 +1,5 @@
+/* Globals */
+
 body {
     margin: 0;
     text-align: center;
@@ -8,9 +10,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 10px;
-    /* 
-    Shadow
-    outline-width: 2px;
+    /* outline-width: 2px;
     outline-color: #FFF;
     text-shadow: rgb(162, 161, 161) 2px 2px 0; */
 }
@@ -25,17 +25,32 @@ p {
     line-height: 1.765;
 }
 
-.biography {
-    padding-left: 10%;   
-    padding-right: 10%;
+/* .title {
+    padding: 4% 0;
+} */
+
+/* Biography */
+
+.bio-container {
+    padding-left: 15%;   
+    padding-right: 15%;
+    text-align: left;
 }
 
-.title {
-    padding: 4% 0;
+/* .biography p {
+    
+    /* text-indent: 1em; */
+} */
+
+/* Education */
+
+.edu-container {
+    padding-left: 15%;   
+    padding-right: 15%;
 }
 
 .content {
-    padding: 15px;
+    /* padding: 15px; */
     color: rgb(113, 113, 113)
 }
 
@@ -85,4 +100,14 @@ hr {
 
 .social a:hover {
     color: black
+}
+
+.zs-site-link {
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+}
+
+.zs-site-link:hover {
+    text-decoration: none;
+    color: black;
 }
