@@ -29,6 +29,14 @@ p {
     padding: 4% 0;
 } */
 
+/* Media Queries */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+
 /* Biography */
 
 .bio-container {
