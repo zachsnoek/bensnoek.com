@@ -1,4 +1,4 @@
-/* Globals */
+/* Elements */
 
 body {
     margin: 0;
@@ -6,38 +6,30 @@ body {
     font-family: 'Gelasio', serif;
 }
 
-h1 {
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.75;
+}
+
+/* Custom Headers */
+
+.title-header {
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 10px;
     /* outline-width: 2px;
     outline-color: #FFF;
     text-shadow: rgb(162, 161, 161) 2px 2px 0; */
 }
 
-h2 {
-    text-transform: uppercase;
+.section-header {
     letter-spacing: 5px;
 }
- 
-p {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.765;
+
+.title-header, .section-header {
+    text-transform: uppercase;
 }
 
-/* .title {
-    padding: 4% 0;
-} */
-
-/* Media Queries */
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.4rem;
-    }
-}
-
-/* Biography */
+/* Biography Section */
 
 .bio-container {
     padding-left: 15%;   
@@ -45,12 +37,7 @@ p {
     text-align: left;
 }
 
-/* .biography p {
-    
-    /* text-indent: 1em; */
-} */
-
-/* Education */
+/* Education Section */
 
 .edu-container {
     padding-left: 15%;   
@@ -61,10 +48,6 @@ p {
     /* padding: 15px; */
     color: rgb(113, 113, 113)
 }
-
-/* .btn-container {
-    width: 150px;
-} */
 
 .img-ben {
     /* border-radius: 50%; */
@@ -88,10 +71,7 @@ hr {
     width: 80%;
 }
 
-/*
-    all caps w/ tracking
-    gray with black hover
-*/
+/* Footer Section */
 
 .footer {
     font-size: 12px;
@@ -118,4 +98,15 @@ hr {
 .zs-site-link:hover {
     text-decoration: none;
     color: black;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
 }
