@@ -4,11 +4,20 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Gelasio', serif;
+    color: rgb(113, 113, 113);
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.75;
+}
+
+hr {
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Custom Headers */
@@ -26,32 +35,11 @@ p {
 }
 
 .title-header, .section-header {
+    color: black;
     text-transform: uppercase;
 }
 
-/* Biography Section */
-
-.bio-container {
-    padding-left: 15%;   
-    padding-right: 15%;
-    text-align: left;
-}
-
-/* Education Section */
-
-.edu-container {
-    padding-left: 15%;   
-    padding-right: 15%;
-}
-
-.content {
-    /* padding: 15px; */
-    color: rgb(113, 113, 113)
-}
-
-.img-ben {
-    /* border-radius: 50%; */
-}
+/* Buttons */
 
 .bj-btn {
     text-transform: uppercase;
@@ -63,50 +51,68 @@ p {
     border-color: #9F5F9F;
 }
 
+/* Header Image */
+
 .header-img {
     padding: 0;
 }
 
-hr {
-    width: 80%;
+/* Section Content */
+
+.section-content {
+    /* Align with the image */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+}
+
+/* Biography Section */
+
+.biography .section-content {
+    text-align: left;
 }
 
 /* Footer Section */
 
 .footer {
     font-size: 12px;
-    color: rgb(113, 113, 113);
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
-.social a {
-    text-decoration: none;
+.social-icon {
     color: rgb(113, 113, 113);
     padding-left: 3px;
 }
 
-.social a:hover {
+.social-icon:hover {
     color: black
 }
 
 .zs-site-link {
-    text-decoration: none;
     color: rgb(113, 113, 113);
 }
 
 .zs-site-link:hover {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {/*768*/
     body {
-        font-size: 1.5rem;
-    }
-    h1 {
         font-size: 1.4rem;
+    }
+
+    .title-header {
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+
+    .section-content {
+        width: 100%;
+        padding-left: 10%;   
+        padding-right: 10%;
     }
 }
