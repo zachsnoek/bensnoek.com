@@ -5,6 +5,7 @@ body {
     text-align: center;
     font-family: 'Gelasio', serif;
     color: rgb(113, 113, 113);
+    display: none;
 }
 
 p {
