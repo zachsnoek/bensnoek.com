@@ -10,23 +10,26 @@
         <link href="https://fonts.googleapis.com/css?family=Gelasio:400,600,700|Open+Sans:400,400i,700,700i,800,800i&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://kit.fontawesome.com/b82a950b5f.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col my-5">
-                    <h1 class="title-header">Benjamin P. Snoek</h1>
+            <div data-aos="fade-in">
+                <div class="row">
+                    <div class="col my-5">
+                        <h1 class="title-header">Benjamin P. Snoek</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="header-img col">
+                        <img class="img-ben img-fluid" src="img/ben-2019.jpg">
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="header-img col">
-                    <img class="img-ben img-fluid" src="img/ben-2019.jpg">
-                </div>
-            </div>
-
-            <div class="row">
+            <div class="row" data-aos="fade-in">
                 <div class="biography col my-5">
                     <h2 class="section-header">Biography</h2>
                     <div class="section-content mt-4">
@@ -39,7 +42,7 @@
 
             <hr>
 
-            <div class="row">
+            <div class="row" data-aos="fade-in">
                 <div class="education col my-5">
                     <h2 class="section-header">Education</h2>
                     <div class="section-content">
@@ -57,30 +60,34 @@
 
             <hr>
 
-            <div class="row">
-                <div class="col my-5">
-                    <h2 class="section-header">Get In Touch</h2>
-                    <div class="mt-4">
-                        <a href="mailto:bensnoek@gmail.com" class="btn btn-outline-dark bj-btn">Contact Me</a>
+            <div data-aos="fade-in">
+                <div class="row">
+                    <div class="col my-5">
+                        <h2 class="section-header">Get In Touch</h2>
+                        <div class="mt-4">
+                            <a href="mailto:bensnoek@gmail.com" class="btn btn-outline-dark bj-btn">Contact Me</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="footer col mt-5 mb-3">
-                    <div class="mb-3">
-                        <a href="https://www.facebook.com/ben.snoek" class="social-icon fab fa-facebook-square fa-3x" target="_blank"></a>
-                        <a href="https://www.instagram.com/bensnoek" class="social-icon fab fa-instagram fa-3x" target="_blank"></a>
-                    </div>
+                <div class="row">
+                    <div class="footer col mt-5 mb-3">
+                        <div class="mb-3">
+                            <a href="https://www.facebook.com/ben.snoek" class="social-icon fab fa-facebook-square fa-3x" target="_blank"></a>
+                            <a href="https://www.instagram.com/bensnoek" class="social-icon fab fa-instagram fa-3x" target="_blank"></a>
+                        </div>
 
-                    <div class="copy">
-                        &#169; 2020 Benjamin P. Snoek. Crafted by <a href="https://www.zachsnoek.com" target="_blank" class="zs-site-link">Zachary D. Snoek</a>.
+                        <div class="copy">
+                            &#169; 2020 Benjamin P. Snoek. Crafted by <a href="https://www.zachsnoek.com" target="_blank" class="zs-site-link">Zachary D. Snoek</a>.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="js/index.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({duration: 1500});
+        </script>
     </body>
 </html>
