@@ -1,8 +1,10 @@
-/* Elements */
-
 :root {
     --outside-margin: 3rem;
+    --md-margin: 2rem;
+    --sm-margin: 1rem;
 }
+
+/* Elements */
 
 body {
     margin: 0;
@@ -15,39 +17,9 @@ body {
     align-content: center;
 }
 
-/*
-    I think centering issue for content comes from width
-    not being set to max-width
-*/
-
-/* .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-.title-header {
-    margin-top: var(--outside-margin);
-    margin-bottom: var(--outside-margin);
-}
-
 section {
     margin-top: var(--outside-margin);
     margin-bottom: var(--outside-margin);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    width: 100%;
-}
-
-/* .container {
-    flex: auto
-} */
-
-.img-ben {
-    max-width: 100%;
-    height: auto;
 }
 
 p {
@@ -67,9 +39,21 @@ a, a:hover {
     text-decoration: none;
 }
 
+/* Custom Margin Classes */
+
+.my-md {
+    margin-top: var(--md-margin);
+}
+
+.my-sm {
+    margin-top: var(--sm-margin);
+}
+
 /* Custom Headers */
 
 .title-header {
+    margin-top: var(--outside-margin);
+    margin-bottom: var(--outside-margin);
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 10px;
@@ -79,6 +63,8 @@ a, a:hover {
 }
 
 .section-header {
+    margin-top: 0;
+    margin-bottom: 2rem;
     font-size: 2rem;
     letter-spacing: 5px;
     font-weight: 500;
@@ -89,43 +75,38 @@ a, a:hover {
     text-transform: uppercase;
 }
 
+/* Title Section */
+
+.img-ben {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Buttons */
 
 .btn {
+    padding: .375rem .75rem;
     display: inline-block;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     background-color: transparent;
     color: #343a40;
     border: 1px solid transparent;
     border-color: #343a40;
     border-radius: .25rem;
-    padding: .375rem .75rem;
-    line-height: 1.5;
 }
 
 .btn:hover {
-    color: #FFF;
-}
-
-.bj-btn {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.bj-btn:hover {
     background-color: #9F5F9F;
+    color: #FFF;
     border-color: #9F5F9F;
-}
-
-/* Header Image */
-
-.header-img {
-    padding: 0;
 }
 
 /* Section Content */
 
 .section-content {
-    /* Align with the image */
+    /* Center align w/ image while being left justified */
     margin-left: auto;
     margin-right: auto;
     max-width: 1050px;
@@ -133,39 +114,29 @@ a, a:hover {
 
 /* Biography Section */
 
-.biography .section-content {
+#biography .section-content {
     text-align: left;
 }
 
 /* Footer Section */
 
-.footer {
-    font-size: 12px;
+footer {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: .75rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
 
-footer {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-}
-
-.social-icon {
+.social-icon, .zs-site-link  {
     color: rgb(113, 113, 113);
     padding-left: 3px;
 }
 
-.social-icon:hover {
-    color: black
-}
-
-.zs-site-link {
-    color: rgb(113, 113, 113);
-}
-
-.zs-site-link:hover {
+.social-icon:hover, .zs-site-link:hover {
     color: black;
     text-decoration: none;
+
 }
 
 /* Media Queries */
@@ -181,12 +152,11 @@ footer {
     }
 
     .section-content {
-        /* width: 100%; */
         padding-left: 7%;   
         padding-right: 7%;
     }
 
-    .education .section-content {
+    #education .section-content {
         padding-left: 10%;
         padding-right: 10%;
     }
