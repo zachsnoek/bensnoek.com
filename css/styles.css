@@ -16,8 +16,8 @@ body {
 }
 
 /*
-    I think centering issue for content comes from padding
-    flex-basis, grow
+    I think centering issue for content comes from width
+    not being set to max-width
 */
 
 /* .flex-container {
