@@ -1,10 +1,53 @@
 /* Elements */
 
+:root {
+    --outside-margin: 3rem;
+}
+
 body {
     margin: 0;
     text-align: center;
     font-family: 'Gelasio', serif;
     color: rgb(113, 113, 113);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/*
+    I think centering issue for content comes from padding
+    flex-basis, grow
+*/
+
+/* .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.title-header {
+    margin-top: var(--outside-margin);
+    margin-bottom: var(--outside-margin);
+}
+
+section {
+    margin-top: var(--outside-margin);
+    margin-bottom: var(--outside-margin);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+}
+
+/* .container {
+    flex: auto
+} */
+
+.img-ben {
+    max-width: 100%;
+    height: auto;
 }
 
 p {
@@ -14,15 +57,20 @@ p {
 
 hr {
     width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
 }
 
-a {
+a, a:hover {
     text-decoration: none;
 }
 
 /* Custom Headers */
 
 .title-header {
+    font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 10px;
     /* outline-width: 2px;
@@ -31,7 +79,9 @@ a {
 }
 
 .section-header {
+    font-size: 2rem;
     letter-spacing: 5px;
+    font-weight: 500;
 }
 
 .title-header, .section-header {
@@ -40,6 +90,21 @@ a {
 }
 
 /* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #343a40;
+    border: 1px solid transparent;
+    border-color: #343a40;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+}
+
+.btn:hover {
+    color: #FFF;
+}
 
 .bj-btn {
     text-transform: uppercase;
@@ -63,7 +128,7 @@ a {
     /* Align with the image */
     margin-left: auto;
     margin-right: auto;
-    width: 1050px;
+    max-width: 1050px;
 }
 
 /* Biography Section */
@@ -78,6 +143,11 @@ a {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+}
+
+footer {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
 }
 
 .social-icon {
@@ -101,18 +171,23 @@ a {
 /* Media Queries */
 
 @media (max-width: 1100px) {/*768*/
-    /* body {
-        font-size: 1.4rem;
-    } */
-
     .title-header {
         font-size: 2rem;
         letter-spacing: 5px;
     }
 
+    .section-header {
+        font-size: 1.5rem;
+    }
+
     .section-content {
-        width: 100%;
-        padding-left: 10%;   
+        /* width: 100%; */
+        padding-left: 7%;   
+        padding-right: 7%;
+    }
+
+    .education .section-content {
+        padding-left: 10%;
         padding-right: 10%;
     }
 }
