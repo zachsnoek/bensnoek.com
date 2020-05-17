@@ -166,3 +166,16 @@ footer {
         padding-right: 10%;
     }
 }
+
+/* Videos Page */
+
+.series-header-img {
+    margin: auto;
+    max-width: 40%;
+}
+
+iframe, object, embed {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
