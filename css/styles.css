@@ -141,6 +141,17 @@ h1 a {
     text-align: left;
 }
 
+/* Contact Form */
+
+.hidden {
+    display: none;
+}
+
+#contact-form {
+    max-width: 500px;
+    text-align: left;
+}
+
 /* Footer Section */
 
 footer {
