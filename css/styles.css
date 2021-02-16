@@ -135,6 +135,14 @@ h1 a {
     text-align: left;
 }
 
+.section-link {
+    color: inherit;
+}
+
+.section-link:hover {
+    color: #000;
+}
+
 /* Biography Section */
 
 #biography .section-content {
